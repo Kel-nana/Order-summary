@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +9,8 @@
 
 :root {
   --color-dark-blue: hsl(218, 44%, 22%);
-  --color-grayish-blue: hsl(220, 15%, 55%);
-  --color-white: hsl(0, 0%, 100%);
+  --color-grayish-blue: hsl(219, 26%, 78%);
+  --color-white: hsl(0, 16%, 96%);
   --color-light-grey: hsl(212, 45%, 89%);
 
   --transition: all 400ms ease;
@@ -17,10 +19,69 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-grayish-blue);
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
   height: 100vh;
   width: 1440px;
-  font-family: "Outfit", sans-serif, system-ui, -apple-system,
+  font-family: "Red Hat Display", sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 80vh;
+  border: 0 solid transparent;
+  border-radius: 20px;
+  background: var(--color-white);
+}
+
+.hero {
+  width: 350px;
+  border-top-left-radius: 17.5px;
+  border-top-right-radius: 17.5px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background: var(--color-light-grey);
+  padding: 3px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 70px;
+  color: rgb(145, 158, 158);
+}
+
+span {
+  font-weight: 700;
+  color: black;
 }
